@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Challenge | Crypt</title>
+  </head>
+  <body>
+    <header class="header">
+        <img src="assets/logo.svg" alt="logo">
+    </header>
+    <div class="container">
+        <main class="main">
+            <textarea class="main__input" rows="10" name="input" id="input" placeholder="Ingrese el texto aqui"></textarea>
+            <div class="main__bottom">
+                <div class="main__alert">
+                    <img src="assets/alert.svg" alt="">
+                    <span>Solo letras minúsculas y sin acentos</span>
+                </div>
+                <div class="main__actions">
+                    <button id="encrypt" class="btn btn--primary">Encriptar</button>
+                    <button id="decrypt" class="btn btn--secundary">Desencriptar</button>
+                </div>
+            </div>
+        </main>
+        <aside class="aside">
+            <div class="aside__message active">
+                <img class="aside__image" src="assets/person.svg" alt="icon of person">
+                <h3 class="aside__title">Ningún mensaje fue encontrado</h3>
+                <p class="aside__text">Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
+            <div class="aside__out">
+                <textarea name="output" id="output"></textarea>
+                <button id="copy" class="aside__btn btn btn--secundary">
+                    Copiar
+                </button>
+            </div>
+        </aside>
+    </div>
+  </body>
+  <script src="app.js"></script>
+</html>
